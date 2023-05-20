@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FILL YOUR DETAILS</title>
+    <style>
+		marquee{background-color:#71e7eb;color:white;}
+		body{background-color:blue;font-color:blue;}
+		h2{background-color:#47b7bf;}
+		
+	</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="sweetalert.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <p>
+    <a style="font-size:30px" href="books.html">Back</a>
+  </p>
+    <div class="w-50 m-auto">
+      
+
+        <div class="container">
+    <form action="connect.php" method="post" class="was-validated" enctype="multipart/form-data">
+
+        <div class ="form-group">
+        <label for="bname">Book Name:</label>
+     <input type="text" class="form-control" id="bname" placeholder="Enter Your Book name" name="bname" required>
+     <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill Book Name.</div>
+        </div>
+    
+     <div class ="form-group">
+        <label for="bauthor">Book Author:</label>
+        <input type="text" class="form-control" id="bauthor" placeholder="Enter Author Name" name="bauthor" required>
+        <div class="valid-feedback">Valid.</div>
+             <div class="invalid-feedback">Please fill author name.</div>
+           </div>
+     <div class ="form-group">
+        <label for="bprice">Price of Book:</label>
+        <input type="text" class="form-control" id="bprice" placeholder="Enter Price" name="bprice" required>
+        <div class="valid-feedback">Valid.</div>
+             <div class="invalid-feedback">Please fill book price.</div>
+           </div>
+        <div class ="form-group">
+            <label for="bpublisher">Name of Publisher of the Book:</label>
+            <input type="text" class="form-control" id="bpublisher" placeholder="Enter book Publication" name="bpublisher" required>
+            <div class="valid-feedback">Valid.</div>
+                 <div class="invalid-feedback">Please fill book publication.</div>
+               </div>
+        <br>
+<div class ="form-group">
+            <label for="file">Image of book:</label>
+            <input type="file" class="not validated" id="image" placeholder="upload an image" name="image" required>
+            <div class="valid-feedback">Valid.</div>
+                 <div class="invalid-feedback">Please upload image.</div>
+               </div>
+        <br>
+        <div class ="form-group">
+            <label for="email">Email ID:</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter Your Email Address" name="email" required>
+            <div class="valid-feedback">Valid.</div>
+                 <div class="invalid-feedback">Please fill Your Email Address.</div>
+               </div>
+        <div class ="form-group">
+            <label for="pno">Phone Number:</label>
+            <input type="text" class="form-control" id="pno" placeholder="Enter Your Phone Number" name="pno" required>
+            <div class="valid-feedback">Valid.</div>
+                 <div class="invalid-feedback">Please fill Your Phone Number.</div>
+               </div>
+        <div class="form-group">  
+            <label for="addr">Address:</label>  
+            <textarea class="form-control" rows="3" name="addr" id="addr" aria-describedby="inputGroupPrepend" required></textarea>  
+            <div class="invalid-feedback">Please Provide Your Address</div>  
+        </div>   
+           <div class="form-group form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="yn" required> Do you want to confirm
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please Check this checkbox to continue.</div>
+            </label>
+          </div>
+       <input type="submit" name="upload" value="SUBMIT" class="btn btn-primary"/> <br>
+      </form>
+    </div>
+    </div>
+    
+    <script src="sweetalert.min.js"></script>
+<script type="text/javascript">
+    function validation()
+  {
+    swal("Good Job!", "Form Submitted Successfully", "success");
+  }
+</script>
+
+
+
+
+
+</body>
+</html>
